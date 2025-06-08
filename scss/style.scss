@@ -1,0 +1,28 @@
+@import "reset";
+
+header, footer{
+    height:100vh;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    
+    h1{
+        font-size: 60px;
+    }
+}
+
+.animation{
+    height: 100vh;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), 
+                linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+     background-blend-mode: multiply;
+    position: relative;
+    overflow: hidden;//?
+}
+
+.rocket{
+    height: 500px;
+    position:absolute;
+    top: 50%;
+    left:0%;
+}
