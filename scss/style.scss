@@ -1,28 +1,75 @@
 @import "reset";
 
-header, footer{
+.haeder-layout{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    width: 100%;
     height:100vh;
+    justify-self: center;
+    align-items: center;
+    background: #242424;
+}
+
+.header_title{
+    flex: 50%;
+    display: flex;  
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-self: center;
+    padding-left: 15%; 
+    h1{
+        font-size: 60px;
+        color: white;
+    }
+}
+
+.header_pic{
+    flex: 50%;
+    display: flex;  
+    box-sizing: border-box;
+    .rocket{
+        height: 500px;
+    }
+    .star{
+        opacity: 0.8;
+        height: 30px;
+        position: absolute;
+        top: 80%;
+        left:30%;
+        animation: scale 3s ease infinite alternate;
+        @keyframes scale {
+            0% {
+                transform: rotate(70deg) scale(0.9);
+            }
+            100% {
+                transform: rotate(70deg)scale(1.1);
+            }
+        }
+    }
+}
+
+.animation{
+    position: relative; 
+    z-index: 10; //沒辦法覆蓋header
+    background: #d36868;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+footer{
+    position: relative;
+    height:200vh;
+    background: #000;
     display: flex;
     justify-self: center;
     align-items: center;
     
     h1{
         font-size: 60px;
+        color: white;
     }
 }
 
-.animation{
-    height: 100vh;
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), 
-                linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-     background-blend-mode: multiply;
-    position: relative;
-    overflow: hidden;//?
-}
 
-.rocket{
-    height: 500px;
-    position:absolute;
-    top: 50%;
-    left:0%;
-}
