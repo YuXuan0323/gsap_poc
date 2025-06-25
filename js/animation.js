@@ -105,20 +105,23 @@ gsap.to('.cloud', {
   scrollTrigger: {
     trigger: '.haeder-layout',
     start: 'top top', 
-    end: 'bottom top', 
+    end: 'bottom 50px', 
     scrub: true
   }
 });
 
-gsap.to('.animation', {
-  y: -250,
-  opacity: 1,
-  delay: 1,
-  ease: 'sine.inOut',
-  scrollTrigger: {
-    trigger: '.haeder-layout',
-    start: 'top top', 
-    end: 'bottom top', 
-    scrub: true
+gsap.fromTo('.animation',
+  {
+    y: 200,
+  },
+  {
+    y: -300,
+    ease: 'sine.inOut',
+    scrollTrigger: {
+      trigger: '.haeder-layout',
+      start: 'top top',
+      end: 'bottom top',
+      scrub: true
+    }
   }
-});
+);

@@ -1,5 +1,9 @@
 @import "reset";
 
+.intro{
+    
+}
+
 .haeder-layout{
     display: flex;
     position: relative;
@@ -9,6 +13,7 @@
     justify-self: center;
     align-items: center;
     background: #242424;
+    overflow: hidden
 }
 
 .header_title{
@@ -60,18 +65,15 @@
 
 .animation{
     position: relative; 
-    z-index: 10; //要用gsap.to才會覆蓋 confirm method
+    z-index: 10;
     background: #FDFCE9;
     height: 100vh;
     overflow: hidden;
-    // ".cloud{ //stacking context不能寫在這?
-    //     background: transparent;
-    //     position: absolute;
-    //     z-index: 11;
-    //     background-size: cover;
-    //     top: -100px;
-    //     left: 0
-    // }"
+}
+
+.fortest_section{
+    background: #000;
+    height: 100vh;
 }
 
 
