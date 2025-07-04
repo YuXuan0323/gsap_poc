@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
 const rocket = document.querySelector(".rocket");
-const container = document.querySelector(".animation");
+const container = document.querySelector(".cloud_section");
 
 gsap.to( rocket,{
     duration: .5,
@@ -14,11 +14,11 @@ gsap.to( rocket,{
         autoRotate: false
     },
     scrollTrigger:{
-        trigger: ".animation",
+        trigger: ".cloud_section",
         start: "top bottom",
         end: "bottom top",
         scrub: true,
-        markers: true
+        // markers: true
     }
 });
 
@@ -87,41 +87,35 @@ gsap.to(stars, {
   y: -200,
   ease: 'easeInOut',
   scrollTrigger: {
-    trigger: '.animation',
+    trigger: '.cloud_section',
     start: 'top bottom',
     end: 'bottom top',
     scrub: true,
-    markers: true,
+    // markers: true,
     onUpdate: () => {
       console.log("✨ 動畫更新中");
     }
   }
 });
 
-
-gsap.to('.cloud', {
-  y: -500,
-  ease: 'sine.inOut',
+gsap.to(".cloud_section", {
+  y: "-100vh",
+  ease: "none",
   scrollTrigger: {
-    trigger: '.haeder-layout',
-    start: 'top top', 
-    end: 'bottom 50px', 
+    trigger: ".intro",
+    start: "top top",
+    end: "bottom top",
     scrub: true
   }
 });
 
-gsap.fromTo('.animation',
-  {
-    y: 200,
-  },
-  {
-    y: -300,
-    ease: 'sine.inOut',
-    scrollTrigger: {
-      trigger: '.haeder-layout',
-      start: 'top top',
-      end: 'bottom top',
-      scrub: true
-    }
+gsap.to(".cloud", {
+  y: "-100vh",
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".intro",
+    start: "top top",
+    end: "bottom top",
+    scrub: true
   }
-);
+});
