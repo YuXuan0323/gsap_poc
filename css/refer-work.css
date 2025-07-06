@@ -1,0 +1,71 @@
+.first-section-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FDFCE9 !important;
+}
+.first-section-view h1 {
+  font-size: 3rem;
+  color: #000;
+  display: inline-block !important;
+  background: none !important;
+}
+
+.second-section-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff0000 !important;
+}
+.second-section-view h1 {
+  font-size: 3rem;
+  color: #fff;
+  display: inline-block;
+  background: none !important;
+}
+
+.third-section-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000 !important;
+}
+.third-section-view h1 {
+  font-size: 3rem;
+  color: #fff;
+  display: inline-block !important;
+  background: none !important;
+}
+
+.first-object {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.second-object {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.third-object {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
